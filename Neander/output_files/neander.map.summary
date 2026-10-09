@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Oct  9 16:34:47 2026
+Analysis & Synthesis Status : Successful - Fri Oct  9 16:55:47 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : neander
 Top-level Entity Name : decoder_4x11
 Family : Arria II GX
 Logic utilization : N/A
-    Combinational ALUTs : 11
+    Combinational ALUTs : 12
     Memory ALUTs : 0
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 15
+Total pins : 16
 Total virtual pins : 0
 Total block memory bits : 0
 DSP block 18-bit elements : 0

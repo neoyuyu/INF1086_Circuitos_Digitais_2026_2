@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hermione\Desktop\CD\Projetos\LAB2\simulation\qsim
+vRCA
+Z1 IVAdaEEb2F]FQQOZfmEcoJ2
+Z2 VE[?NZ@J8hbNQAB4LbzAeb1
+Z3 dC:\Users\hermione\Desktop\CD\Projetos\LAB2\simulation\qsim
+Z4 w1787432336
+Z5 8RCA.vo
+Z6 FRCA.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@r@c@a
+!i10b 1
+Z10 !s100 al;15Go[P6]6a44EmRY2P2
+!s85 0
+Z11 !s108 1787432337.902000
+Z12 !s107 RCA.vo|
+Z13 !s90 -work|work|RCA.vo|
+!s101 -O0
+vRCA_vlg_check_tst
+!i10b 1
+!s100 W3EY``W^E6[3l2@6DOFAf2
+IK]1kK<7Mn2k::mz9n^JfN2
+Va4gDDWO5gMo31BOOT@S>I0
+R3
+Z14 w1787432335
+Z15 8RCA.vt
+Z16 FRCA.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1787432338.031000
+Z18 !s107 RCA.vt|
+Z19 !s90 -work|work|RCA.vt|
+!s101 -O0
+R8
+n@r@c@a_vlg_check_tst
+vRCA_vlg_sample_tst
+!i10b 1
+!s100 X4H>>i>6IZgn_OUP:hLdR3
+IXi`LEU7:2G8[h4:KV?<fB1
+V:fggAXIa9>2B5L^7FdYBE3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@r@c@a_vlg_sample_tst
+vRCA_vlg_vec_tst
+!i10b 1
+!s100 T;J1=T5zf8SZP3hiE;IAD1
+I6ono5Qk:ZZ>HeP2mR9>Yo2
+VfX[mRl61gNf^3RoPDo>HW0
+R3
+R14
+R15
+R16
+L0 234
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@r@c@a_vlg_vec_tst

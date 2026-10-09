@@ -1,0 +1,911 @@
+|DivisorFrequencia24
+Q <= DivisorFrequencia:inst3.Q
+RST => DivisorFrequencia:inst3.RST
+RST => DivisorFrequencia:inst2.RST
+RST => DivisorFrequencia:inst.RST
+CLK => DivisorFrequencia:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3
+Q <= FFD_Divisor:inst16.Q
+RST => FFD_Divisor:inst16.RST
+RST => FFD_Divisor:inst15.RST
+RST => FFD_Divisor:inst14.RST
+RST => FFD_Divisor:inst13.RST
+RST => FFD_Divisor:inst12.RST
+RST => FFD_Divisor:inst11.RST
+RST => FFD_Divisor:inst10.RST
+RST => FFD_Divisor:inst9.RST
+CLK => FFD_Divisor:inst9.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst16
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst16|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst16|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst16|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst15
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst15|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst15|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst15|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst14
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst14|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst14|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst14|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst13
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst13|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst13|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst13|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst12
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst12|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst12|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst12|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst11
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst11|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst11|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst11|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst10
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst10|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst10|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst10|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst9
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst9|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst9|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst3|FFD_Divisor:inst9|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2
+Q <= FFD_Divisor:inst16.Q
+RST => FFD_Divisor:inst16.RST
+RST => FFD_Divisor:inst15.RST
+RST => FFD_Divisor:inst14.RST
+RST => FFD_Divisor:inst13.RST
+RST => FFD_Divisor:inst12.RST
+RST => FFD_Divisor:inst11.RST
+RST => FFD_Divisor:inst10.RST
+RST => FFD_Divisor:inst9.RST
+CLK => FFD_Divisor:inst9.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst16
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst16|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst16|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst16|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst15
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst15|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst15|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst15|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst14
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst14|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst14|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst14|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst13
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst13|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst13|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst13|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst12
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst12|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst12|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst12|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst11
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst11|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst11|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst11|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst10
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst10|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst10|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst10|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst9
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst9|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst9|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst2|FFD_Divisor:inst9|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst
+Q <= FFD_Divisor:inst16.Q
+RST => FFD_Divisor:inst16.RST
+RST => FFD_Divisor:inst15.RST
+RST => FFD_Divisor:inst14.RST
+RST => FFD_Divisor:inst13.RST
+RST => FFD_Divisor:inst12.RST
+RST => FFD_Divisor:inst11.RST
+RST => FFD_Divisor:inst10.RST
+RST => FFD_Divisor:inst9.RST
+CLK => FFD_Divisor:inst9.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst16
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst16|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst16|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst16|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst15
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst15|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst15|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst15|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst14
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst14|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst14|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst14|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst13
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst13|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst13|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst13|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst12
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst12|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst12|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst12|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst11
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst11|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst11|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst11|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst10
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst10|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst10|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst10|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst9
+Q <= FFD:inst.Q
+RST => FFD:inst.RST
+CLK => FFD:inst.CLK
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst9|FFD:inst
+Q <= LATCHD:inst5.Q
+RST => LATCHD:inst5.RST
+RST => LATCHD:inst.RST
+D => LATCHD:inst.D
+CLK => inst3.IN0
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst9|FFD:inst|LATCHD:inst5
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DivisorFrequencia24|DivisorFrequencia:inst|FFD_Divisor:inst9|FFD:inst|LATCHD:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst8.IN1
+RST => inst7.IN1
+CLK => inst4.IN0
+CLK => inst7.IN2
+D => inst3.IN0
+D => inst7.IN0
+NOTQ <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+

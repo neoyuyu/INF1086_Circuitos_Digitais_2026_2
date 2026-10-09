@@ -1,0 +1,245 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hermione\Desktop\LAB5\simulation\qsim
+vDivisorFrequencia
+Z1 !s100 VIXnB3ikei9RNdfJm6mTS2
+Z2 Ieh83l?CRU3>PINJ_P89EC3
+Z3 VP[:2Wn53G]56olom[`Y=O3
+Z4 dC:\Users\hermione\Desktop\LAB5\simulation\qsim
+Z5 w1790886089
+Z6 8DivisorFrequencia.vo
+Z7 FDivisorFrequencia.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|DivisorFrequencia.vo|
+Z10 o-work work -O0
+Z11 n@divisor@frequencia
+Z12 !s108 1790886090.330000
+Z13 !s107 DivisorFrequencia.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vDivisorFrequencia24
+Z14 I[hEcaEnZ0g<<g][Jd>k0@0
+Z15 VoKQEXH:?iD`S>FL3^37Mi0
+R4
+Z16 w1790899017
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z17 n@divisor@frequencia24
+!i10b 1
+Z18 !s100 <cCU_G<N=C2kb@:[XBkH61
+!s85 0
+Z19 !s108 1790899018.170000
+R13
+!s101 -O0
+vDivisorFrequencia24_vlg_check_tst
+!i10b 1
+Z20 !s100 VWi`>0QdfCd=G[J]d@=Lf1
+Z21 IdDH=XU@g^=Q?L;W^2olYm1
+Z22 VA^<zbFY<5ad`U?6<<P>[32
+R4
+Z23 w1790899016
+Z24 8DivisorFrequencia.vt
+Z25 FDivisorFrequencia.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z26 !s108 1790899018.487000
+Z27 !s107 DivisorFrequencia.vt|
+Z28 !s90 -work|work|DivisorFrequencia.vt|
+!s101 -O0
+R10
+Z29 n@divisor@frequencia24_vlg_check_tst
+vDivisorFrequencia24_vlg_sample_tst
+!i10b 1
+Z30 !s100 =]YS46LJ<mJcMVEOh=kjc1
+Z31 IRVW:V^Ta^^KXbTWHDjJQ71
+Z32 V9]Sb^<YKiCBVe0mUfUhC50
+R4
+R23
+R24
+R25
+L0 29
+R8
+r1
+!s85 0
+31
+R26
+R27
+R28
+!s101 -O0
+R10
+Z33 n@divisor@frequencia24_vlg_sample_tst
+vDivisorFrequencia24_vlg_vec_tst
+!i10b 1
+Z34 !s100 >T`06K4JzbQPgV9ci@1E:1
+Z35 IKa@ETY`22PB58[cJ^3;WY2
+Z36 V@BSEcnUQlmd[iVCZcQzQ^3
+R4
+R23
+R24
+R25
+Z37 L0 154
+R8
+r1
+!s85 0
+31
+R26
+R27
+R28
+!s101 -O0
+R10
+Z38 n@divisor@frequencia24_vlg_vec_tst
+vDivisorFrequencia_vlg_check_tst
+Z39 !s100 ZUakQ?6K7gj=zefg0aRB23
+Z40 IQk4j^5eN[a^IcClIaJ@DE1
+Z41 VT<CCgCFN_[RJUMaOo@Wz]3
+R4
+Z42 w1790886088
+R24
+R25
+L0 59
+R8
+r1
+31
+Z43 !s108 1790886090.417000
+Z44 !s107 DivisorFrequencia.vt|
+R28
+R10
+Z45 n@divisor@frequencia_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vDivisorFrequencia_vlg_sample_tst
+Z46 !s100 0K?W2SAzhZI]Hi41RLUgl3
+Z47 I2[YnTJ7dzN`OAI>W1EADS3
+Z48 VKzmJIj4z9Ui4C@Bbi719?2
+R4
+R42
+R24
+R25
+L0 29
+R8
+r1
+31
+R43
+R44
+R28
+R10
+Z49 n@divisor@frequencia_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vDivisorFrequencia_vlg_vec_tst
+Z50 IG[L2fBoN2DccP>[8oD0ZH0
+Z51 VEQYQl874ko41meaYXiJOn2
+R4
+R42
+R24
+R25
+Z52 L0 155
+R8
+r1
+31
+R43
+R44
+R28
+R10
+Z53 n@divisor@frequencia_vlg_vec_tst
+Z54 !s100 GlDonIU9>J;IAhmNnV4NQ3
+!i10b 1
+!s85 0
+!s101 -O0
+vFFD_Divisor
+Z55 !s100 <iSEZLL5fPFl:aSOa34bQ0
+Z56 IB<LgX>M1SiV^k>Q1R?nY82
+Z57 VI]6^^]n2=T1i]MN^<6Rl80
+R4
+Z58 w1790884492
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z59 n@f@f@d_@divisor
+Z60 !s108 1790884493.209000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vFFD_Divisor_vlg_check_tst
+Z61 !s100 kcDlLlVS35c?LYc4H3<:X1
+Z62 Io4o5EZ6kRVBa;cS9:Vzd>2
+Z63 VU@U;UDl=ITAzTKM7O=Tf02
+R4
+Z64 w1790884491
+R24
+R25
+L0 59
+R8
+r1
+31
+Z65 !s108 1790884493.303000
+R44
+R28
+R10
+Z66 n@f@f@d_@divisor_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vFFD_Divisor_vlg_sample_tst
+Z67 !s100 ]An_LV8?NR>31>Lja0^;z2
+Z68 I55I`HUVLEQ1mRECG`<TK91
+Z69 V1L8G2=DjPMOIBgomo?IdN3
+R4
+R64
+R24
+R25
+L0 29
+R8
+r1
+31
+R65
+R44
+R28
+R10
+Z70 n@f@f@d_@divisor_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vFFD_Divisor_vlg_vec_tst
+Z71 IiC:n<EBk?nQZJIL?6OeLc0
+Z72 V]MQlT<6HVne>b?]TmPn]G3
+R4
+R64
+R24
+R25
+R37
+R8
+r1
+31
+R65
+R44
+R28
+R10
+Z73 n@f@f@d_@divisor_vlg_vec_tst
+Z74 !s100 ch7YMA<5I`Jld9?]<_jST2
+!i10b 1
+!s85 0
+!s101 -O0

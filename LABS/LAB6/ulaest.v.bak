@@ -1,0 +1,18 @@
+module ula(a, b, s, opsel,flagn,flagz);
+
+	input [3:0]a, b,
+	input [1:0]opsel,
+	output [3:0]S,
+	output flagn, flagz;
+	
+	wire out_rca, out_cla, out_shl, out_shra;
+	
+	  cla_4bits CLA1(
+        .A(a),
+        .B(b),
+		  .S(out_cla),
+    );
+	
+endmodule
+
+  

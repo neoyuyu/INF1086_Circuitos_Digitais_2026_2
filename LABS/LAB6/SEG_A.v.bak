@@ -1,0 +1,9 @@
+module SEG_A(
+    input  [3:0] E,      // E[3] = E3 (MSB) ... E[0] = E0
+    output       segA
+);
+    assign segA = (~E[3] & ~E[2] & ~E[1] &  E[0])   // m1  = 0001
+                | (~E[3] &  E[2] & ~E[1] & ~E[0])   // m4  = 0100
+                | ( E[3] & ~E[2] &  E[1] &  E[0])   // m11 = 1011
+                | ( E[3] &  E[2] & ~E[1] &  E[0]);  // m13 = 1101
+endmodule

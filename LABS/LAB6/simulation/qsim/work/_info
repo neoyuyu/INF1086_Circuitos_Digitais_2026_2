@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hermione\Desktop\LAB6\simulation\qsim
+vFLAGZERO
+Z1 I;>WTQem^QgUPjNIL6JcA=0
+Z2 VKPca`n8I^76?M5]H5zWKc0
+Z3 dC:\Users\hermione\Desktop\LAB6\simulation\qsim
+Z4 w1791332351
+Z5 8DISPLAY.vo
+Z6 FDISPLAY.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@f@l@a@g@z@e@r@o
+Z10 !s100 1Ee=ZA_2HkB7L9G<e>PKD0
+Z11 !s108 1791332353.319000
+Z12 !s107 DISPLAY.vo|
+Z13 !s90 -work|work|DISPLAY.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vFLAGZERO_vlg_check_tst
+Z14 IbiZ9ZNM9j5zYnbnJU>2a53
+Z15 V7bd8G4V]hmUFdcBX3AG[M0
+R3
+R4
+Z16 8DISPLAY.vt
+Z17 FDISPLAY.vt
+L0 57
+R7
+r1
+31
+Z18 !s108 1791332353.412000
+Z19 !s107 DISPLAY.vt|
+Z20 !s90 -work|work|DISPLAY.vt|
+R8
+Z21 n@f@l@a@g@z@e@r@o_vlg_check_tst
+Z22 !s100 JG9EF7iiNo_hnH@Z3@]E31
+!i10b 1
+!s85 0
+!s101 -O0
+vFLAGZERO_vlg_sample_tst
+Z23 IhDL<ooBRl4^?cLK;eD^Vl3
+Z24 Vh;G:l6U_kS30:QeiFKTUM0
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z25 n@f@l@a@g@z@e@r@o_vlg_sample_tst
+Z26 !s100 Yb<8g=z]EVWemDLo_`1100
+!i10b 1
+!s85 0
+!s101 -O0
+vFLAGZERO_vlg_vec_tst
+Z27 ImD<2I`Rc_hgLdY:Ie?fJ83
+Z28 VT`XiG<=Yl87HX?S?G_zi82
+R3
+R4
+R16
+R17
+Z29 L0 152
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z30 n@f@l@a@g@z@e@r@o_vlg_vec_tst
+Z31 !s100 A472VC=Ana2_hL8YGQ[K^2
+!i10b 1
+!s85 0
+!s101 -O0
+vtop
+Z32 !s100 z5VXeWdlF6lXE3mYZ36`T2
+Z33 I2AB<4@JihnI3PYa3IYc`10
+Z34 V[C7^B^KVR3QFQ8jNil_`^0
+R3
+Z35 w1791500519
+R5
+R6
+L0 31
+R7
+r1
+31
+R13
+R8
+!i10b 1
+!s85 0
+Z36 !s108 1791500519.819000
+R12
+!s101 -O0
+vtop_vlg_check_tst
+!i10b 1
+Z37 !s100 S13fb3S38[<Nl@[XVRLHM3
+Z38 Iz4Zc7Gh`oFUII<f3zJ1jl0
+Z39 Vc_4aTE_F;el?aA<b8X]BX1
+R3
+Z40 w1791500518
+R16
+R17
+L0 61
+R7
+r1
+!s85 0
+31
+Z41 !s108 1791500519.981000
+Z42 !s107 DISPLAY.vt|
+R20
+!s101 -O0
+R8
+vtop_vlg_sample_tst
+!i10b 1
+Z43 !s100 m`QTmOC:b[HkiJ`nU:mie2
+Z44 ID8BYj<_Q57GB>LJO5P8@l3
+Z45 VPcm4[H_G_VjZdZJ4B@;<J2
+R3
+R40
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R41
+R42
+R20
+!s101 -O0
+R8
+vtop_vlg_vec_tst
+!i10b 1
+!s100 7B=O^2:WZ;:1z?I0e]HWd3
+IgQP:BXm_UYISog>`okbN12
+Z46 Vda?jdcYLcj7iMbie@gX@73
+R3
+R40
+R16
+R17
+Z47 L0 372
+R7
+r1
+!s85 0
+31
+R41
+R42
+R20
+!s101 -O0
+R8

@@ -1,0 +1,10 @@
+module Display7(
+    input  wire [3:0] C,
+    output wire D
+);
+
+    assign D = (C[0] & C[1] & C[2]) |
+               (C[0] & ~C[1] & ~C[2] & ~C[3]) |
+               (C[2] & ~C[0] & ~C[1] & ~C[3]);
+
+endmodule

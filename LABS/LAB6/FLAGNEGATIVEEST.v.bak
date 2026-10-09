@@ -1,0 +1,8 @@
+module FLAGNEGATIVE(
+    input [3:0]S,
+	 output flag_N
+);
+
+    assign flag_N = S[3];
+	
+endmodule

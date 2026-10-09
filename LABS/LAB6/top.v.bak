@@ -1,0 +1,11 @@
+// top level LAB 6
+// Gabriel Tafarel
+// Sayid Safa 07/10/2026
+module top(
+    input  [3:0] S,
+    input  [3:0] b,
+    input  [1:0] opsel,
+    output [3:0] s,
+    output       segA,
+    output       sebB,
+);

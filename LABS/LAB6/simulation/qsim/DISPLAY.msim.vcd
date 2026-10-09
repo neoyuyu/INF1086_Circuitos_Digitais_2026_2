@@ -1,0 +1,186 @@
+$comment
+	File created using the following command:
+		vcd file DISPLAY.msim.vcd -direction
+$end
+$date
+	Thu Oct 08 20:02:00 2026
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module top_vlg_vec_tst $end
+$var reg 4 ! a [3:0] $end
+$var reg 4 " b [3:0] $end
+$var reg 2 # opsel [1:0] $end
+$var wire 1 $ flagn $end
+$var wire 1 % flagz $end
+$var wire 1 & segA $end
+$var wire 1 ' segB $end
+$var wire 1 ( segC $end
+$var wire 1 ) segD $end
+$var wire 1 * segE $end
+$var wire 1 + segF $end
+$var wire 1 , segG $end
+$var wire 1 - sampler $end
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 ULA1|out_op[2]~6_combout $end
+$var wire 1 5 ULA1|SHRA|y~1_combout $end
+$var wire 1 6 flagn~output_o $end
+$var wire 1 7 flagz~output_o $end
+$var wire 1 8 segA~output_o $end
+$var wire 1 9 segB~output_o $end
+$var wire 1 : segC~output_o $end
+$var wire 1 ; segD~output_o $end
+$var wire 1 < segE~output_o $end
+$var wire 1 = segF~output_o $end
+$var wire 1 > segG~output_o $end
+$var wire 1 ? opsel[1]~input_o $end
+$var wire 1 @ b[1]~input_o $end
+$var wire 1 A b[0]~input_o $end
+$var wire 1 B a[1]~input_o $end
+$var wire 1 C ULA1|SHL|y[3]~0_combout $end
+$var wire 1 D b[2]~input_o $end
+$var wire 1 E a[2]~input_o $end
+$var wire 1 F ULA1|SHL|y[3]~1_combout $end
+$var wire 1 G ULA1|SHL|y[3]~2_combout $end
+$var wire 1 H a[3]~input_o $end
+$var wire 1 I b[3]~input_o $end
+$var wire 1 J ULA1|CLA|S[3]~3_combout $end
+$var wire 1 K ULA1|RCA|FA_gen[1].FA|cout~0_combout $end
+$var wire 1 L ULA1|RCA|FA_gen[3].FA|s~combout $end
+$var wire 1 M ULA1|CLA|S[3]~0_combout $end
+$var wire 1 N ULA1|CLA|S[3]~1_combout $end
+$var wire 1 O ULA1|CLA|S[3]~2_combout $end
+$var wire 1 P ULA1|out_op[3]~0_combout $end
+$var wire 1 Q ULA1|out_op[3]~1_combout $end
+$var wire 1 R ULA1|out_op[2]~7_combout $end
+$var wire 1 S ULA1|out_op[2]~5_combout $end
+$var wire 1 T ULA1|out_op[2]~8_combout $end
+$var wire 1 U ULA1|out_op[2]~3_combout $end
+$var wire 1 V ULA1|out_op[2]~4_combout $end
+$var wire 1 W ULA1|out_op[2]~2_combout $end
+$var wire 1 X ULA1|out_op[2]~9_combout $end
+$var wire 1 Y opsel[0]~input_o $end
+$var wire 1 Z ULA1|out_op[0]~10_combout $end
+$var wire 1 [ a[0]~input_o $end
+$var wire 1 \ ULA1|out_op[0]~11_combout $end
+$var wire 1 ] ULA1|SHL|y~4_combout $end
+$var wire 1 ^ ULA1|SHRA|y~2_combout $end
+$var wire 1 _ ULA1|SHRA|y~0_combout $end
+$var wire 1 ` ULA1|SHRA|y~3_combout $end
+$var wire 1 a ULA1|SHL|y~3_combout $end
+$var wire 1 b ULA1|SHRA|y~4_combout $end
+$var wire 1 c ULA1|out_op[0]~12_combout $end
+$var wire 1 d ULA1|out_op[0]~13_combout $end
+$var wire 1 e ULA1|out_op[1]~18_combout $end
+$var wire 1 f ULA1|out_op[1]~19_combout $end
+$var wire 1 g ULA1|out_op[1]~16_combout $end
+$var wire 1 h ULA1|out_op[1]~14_combout $end
+$var wire 1 i ULA1|out_op[1]~15_combout $end
+$var wire 1 j ULA1|out_op[1]~17_combout $end
+$var wire 1 k ULA1|FZ|flag_z~0_combout $end
+$var wire 1 l SA1|Y~0_combout $end
+$var wire 1 m SB1|S~0_combout $end
+$var wire 1 n SC1|S~0_combout $end
+$var wire 1 o SD1|D~0_combout $end
+$var wire 1 p SE1|segE~0_combout $end
+$var wire 1 q SF1|S~0_combout $end
+$var wire 1 r SG1|S~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 !
+b10 "
+b11 #
+1$
+0%
+0&
+1'
+1(
+0)
+0*
+0+
+0,
+x-
+0.
+1/
+x0
+11
+12
+13
+04
+05
+16
+07
+08
+19
+1:
+0;
+0<
+0=
+0>
+1?
+1@
+0A
+1B
+1C
+0D
+0E
+0F
+1G
+1H
+0I
+1J
+1K
+1L
+1M
+0N
+1O
+1P
+1Q
+0R
+1S
+0T
+0U
+1V
+0W
+1X
+1Y
+0Z
+0[
+0\
+0]
+1^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+1h
+1i
+1j
+1k
+0l
+1m
+1n
+0o
+0p
+0q
+0r
+$end
+#1000000

@@ -1,0 +1,294 @@
+|ulaest
+a[0] => a[0].IN4
+a[1] => a[1].IN4
+a[2] => a[2].IN4
+a[3] => a[3].IN4
+b[0] => b[0].IN4
+b[1] => b[1].IN4
+b[2] => b[2].IN4
+b[3] => b[3].IN4
+opsel[0] => mux1[3].OUTPUTSELECT
+opsel[0] => mux1[2].OUTPUTSELECT
+opsel[0] => mux1[1].OUTPUTSELECT
+opsel[0] => mux1[0].OUTPUTSELECT
+opsel[0] => mux2[3].OUTPUTSELECT
+opsel[0] => mux2[2].OUTPUTSELECT
+opsel[0] => mux2[1].OUTPUTSELECT
+opsel[0] => mux2[0].OUTPUTSELECT
+opsel[1] => out_op.OUTPUTSELECT
+opsel[1] => out_op.OUTPUTSELECT
+opsel[1] => out_op.OUTPUTSELECT
+opsel[1] => out_op.OUTPUTSELECT
+s[0] <= out_op[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= out_op[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= out_op[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= out_op[3].DB_MAX_OUTPUT_PORT_TYPE
+flagn <= flag_n_4bits:FN.flag_n
+flagz <= flag_z_4bits:FZ.flag_z
+
+
+|ulaest|rca4b:RCA
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+s[0] <= ha:HA.s
+s[1] <= fa:FA_gen[1].FA.s
+s[2] <= fa:FA_gen[2].FA.s
+s[3] <= fa:FA_gen[3].FA.s
+cout <= fa:FA_gen[3].FA.cout
+
+
+|ulaest|rca4b:RCA|ha:HA
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|rca4b:RCA|fa:FA_gen[1].FA
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|rca4b:RCA|fa:FA_gen[2].FA
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|rca4b:RCA|fa:FA_gen[3].FA
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|cla_4bits:CLA
+A[0] => P[0].IN0
+A[0] => G[0].IN0
+A[1] => P[1].IN0
+A[1] => G[1].IN0
+A[2] => P[2].IN0
+A[2] => G[2].IN0
+A[3] => P[3].IN0
+A[3] => G[3].IN0
+B[0] => P[0].IN1
+B[0] => G[0].IN1
+B[1] => P[1].IN1
+B[1] => G[1].IN1
+B[2] => P[2].IN1
+B[2] => G[2].IN1
+B[3] => P[3].IN1
+B[3] => G[3].IN1
+Cin => C.IN1
+Cin => C.IN1
+Cin => C.IN1
+Cin => C.IN1
+Cin => S.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|shl_4bits:SHL
+a[0] => y.DATAB
+a[0] => y.DATAA
+a[1] => y.DATAB
+a[1] => y.DATAA
+a[2] => y.DATAB
+a[2] => y.DATAA
+a[3] => y.DATAA
+b[0] => LessThan0.IN8
+b[0] => LessThan1.IN8
+b[0] => LessThan2.IN8
+b[0] => LessThan3.IN8
+b[0] => LessThan4.IN8
+b[0] => LessThan5.IN8
+b[0] => LessThan6.IN8
+b[0] => LessThan7.IN8
+b[0] => LessThan8.IN8
+b[0] => LessThan9.IN8
+b[0] => LessThan10.IN8
+b[0] => LessThan11.IN8
+b[0] => LessThan12.IN8
+b[0] => LessThan13.IN8
+b[0] => LessThan14.IN8
+b[1] => LessThan0.IN7
+b[1] => LessThan1.IN7
+b[1] => LessThan2.IN7
+b[1] => LessThan3.IN7
+b[1] => LessThan4.IN7
+b[1] => LessThan5.IN7
+b[1] => LessThan6.IN7
+b[1] => LessThan7.IN7
+b[1] => LessThan8.IN7
+b[1] => LessThan9.IN7
+b[1] => LessThan10.IN7
+b[1] => LessThan11.IN7
+b[1] => LessThan12.IN7
+b[1] => LessThan13.IN7
+b[1] => LessThan14.IN7
+b[2] => LessThan0.IN6
+b[2] => LessThan1.IN6
+b[2] => LessThan2.IN6
+b[2] => LessThan3.IN6
+b[2] => LessThan4.IN6
+b[2] => LessThan5.IN6
+b[2] => LessThan6.IN6
+b[2] => LessThan7.IN6
+b[2] => LessThan8.IN6
+b[2] => LessThan9.IN6
+b[2] => LessThan10.IN6
+b[2] => LessThan11.IN6
+b[2] => LessThan12.IN6
+b[2] => LessThan13.IN6
+b[2] => LessThan14.IN6
+b[3] => LessThan0.IN5
+b[3] => LessThan1.IN5
+b[3] => LessThan2.IN5
+b[3] => LessThan3.IN5
+b[3] => LessThan4.IN5
+b[3] => LessThan5.IN5
+b[3] => LessThan6.IN5
+b[3] => LessThan7.IN5
+b[3] => LessThan8.IN5
+b[3] => LessThan9.IN5
+b[3] => LessThan10.IN5
+b[3] => LessThan11.IN5
+b[3] => LessThan12.IN5
+b[3] => LessThan13.IN5
+b[3] => LessThan14.IN5
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|shra_4bits:SHRA
+a[0] => y.DATAA
+a[1] => y.DATAA
+a[1] => y.DATAB
+a[2] => y.DATAA
+a[2] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y.DATAB
+a[3] => y[3].DATAIN
+b[0] => LessThan0.IN8
+b[0] => LessThan1.IN8
+b[0] => LessThan2.IN8
+b[0] => LessThan3.IN8
+b[0] => LessThan4.IN8
+b[0] => LessThan5.IN8
+b[0] => LessThan6.IN8
+b[0] => LessThan7.IN8
+b[0] => LessThan8.IN8
+b[0] => LessThan9.IN8
+b[0] => LessThan10.IN8
+b[0] => LessThan11.IN8
+b[0] => LessThan12.IN8
+b[0] => LessThan13.IN8
+b[0] => LessThan14.IN8
+b[1] => LessThan0.IN7
+b[1] => LessThan1.IN7
+b[1] => LessThan2.IN7
+b[1] => LessThan3.IN7
+b[1] => LessThan4.IN7
+b[1] => LessThan5.IN7
+b[1] => LessThan6.IN7
+b[1] => LessThan7.IN7
+b[1] => LessThan8.IN7
+b[1] => LessThan9.IN7
+b[1] => LessThan10.IN7
+b[1] => LessThan11.IN7
+b[1] => LessThan12.IN7
+b[1] => LessThan13.IN7
+b[1] => LessThan14.IN7
+b[2] => LessThan0.IN6
+b[2] => LessThan1.IN6
+b[2] => LessThan2.IN6
+b[2] => LessThan3.IN6
+b[2] => LessThan4.IN6
+b[2] => LessThan5.IN6
+b[2] => LessThan6.IN6
+b[2] => LessThan7.IN6
+b[2] => LessThan8.IN6
+b[2] => LessThan9.IN6
+b[2] => LessThan10.IN6
+b[2] => LessThan11.IN6
+b[2] => LessThan12.IN6
+b[2] => LessThan13.IN6
+b[2] => LessThan14.IN6
+b[3] => LessThan0.IN5
+b[3] => LessThan1.IN5
+b[3] => LessThan2.IN5
+b[3] => LessThan3.IN5
+b[3] => LessThan4.IN5
+b[3] => LessThan5.IN5
+b[3] => LessThan6.IN5
+b[3] => LessThan7.IN5
+b[3] => LessThan8.IN5
+b[3] => LessThan9.IN5
+b[3] => LessThan10.IN5
+b[3] => LessThan11.IN5
+b[3] => LessThan12.IN5
+b[3] => LessThan13.IN5
+b[3] => LessThan14.IN5
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|flag_n_4bits:FN
+S[0] => ~NO_FANOUT~
+S[1] => ~NO_FANOUT~
+S[2] => ~NO_FANOUT~
+S[3] => flag_n.DATAIN
+flag_n <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaest|flag_z_4bits:FZ
+S[0] => flag_z.IN0
+S[1] => flag_z.IN1
+S[2] => flag_z.IN1
+S[3] => flag_z.IN1
+flag_z <= flag_z.DB_MAX_OUTPUT_PORT_TYPE
+
+

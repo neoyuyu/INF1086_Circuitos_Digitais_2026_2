@@ -1,0 +1,19 @@
+|decoder_4x11
+opcode[0] => Decoder0.IN3
+opcode[1] => Decoder0.IN2
+opcode[2] => Decoder0.IN1
+opcode[3] => Decoder0.IN0
+operation[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[9] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+operation[10] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+illegal_op <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,6 +1,6 @@
 // Gabriel Tafarel
 // Sayid Safa
-// Conversor BCD - Resulta no output de UM!!! segmento
+// Conversor BCD - Resulta no output de um segmento
 module conversor_bcd(
     input  [3:0] a,
     output       segA,

@@ -1,0 +1,4 @@
+# .gitignore
+
+!.gitignore
+!decoder_4x11.v

@@ -1,10 +1,10 @@
 // Gabriel Tafarel
 // Sayid Safa
-// Divisor de frequencia 50 MHz ate 2Mhz
+// Divisor de frequencia 50 MHz ate 3Hz
 module divisor_frequencia(
-    input  CLK,   // 50 MHz (G21)
-    input  RST,   // reset assincrono, ativo em 0 (KEY0 = H2)
-    output Q      // ~2,98 Hz
+    input  CLK,   // 50 MHz
+    input  RST,   // reset assincrono, ativo em 0
+    output Q      
 );
 
     wire [24:0] clk_est;

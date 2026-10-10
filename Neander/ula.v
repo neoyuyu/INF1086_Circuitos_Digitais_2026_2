@@ -1,4 +1,3 @@
-// ULA 8 bits, complemento de 2 - versao estrutural
 // Gabriel Tafarel
 // Sayid Safa
 // ULA do Neander, 8 bits - comportamental

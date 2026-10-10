@@ -1,3 +1,5 @@
+// Gabriel Tafarel
+// Sayid Safa
 // Esse módulo descreve o decodificador do opcode.
 // Recebe uma halfword (4bits) e decodifica para o bit da operação
 // é importante notar que apesar de 4 bits de entrada, não temos 16 bits de

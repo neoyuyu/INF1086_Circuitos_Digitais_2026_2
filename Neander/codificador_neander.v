@@ -3,16 +3,16 @@
 //   000 = Y | 001 = ADD | 010 = AND | 011 = OR | 100 = NOT
 // Codificador da ULA
 module codificador_ula(
-    input        ula_y,
-    input        ula_add,
-    input        ula_and,
-    input        ula_or,
-    input        ula_not,
-    output [2:0] sel
+    input      [10:0] operation,
+    output reg [2:0]  sel
 );
-
-    assign sel[2] = ula_not;               // 100
-    assign sel[1] = ula_and | ula_or;      // 010 e 011
-    assign sel[0] = ula_add | ula_or;      // 001 e 011
-
+    always @(*) begin
+        sel = 3'b000;                 		 // evita latch de outras operacoes
+		  
+        if (operation[2]) sel = 3'b000;   // LDA -> Y ???
+        if (operation[3]) sel = 3'b001;   // ADD
+        if (operation[5]) sel = 3'b010;   // AND
+        if (operation[4]) sel = 3'b011;   // OR
+        if (operation[6]) sel = 3'b100;   // NOT
+    end
 endmodule

@@ -2,7 +2,7 @@
 // Sayid Safa
 //   000 = Y | 001 = ADD | 010 = AND | 011 = OR | 100 = NOT
 // Codificador da ULA
-module codificador_ula(
+module codificador_neander(
     input      [10:0] operation,
     output reg [2:0]  sel
 );

@@ -1,6 +1,0 @@
-module FLAGZERO(
-    input A[3:0], B[3:0],
-	 output S[3:0]
-);
-    assign segA =
-endmodule

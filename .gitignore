@@ -1,0 +1,28 @@
+# Artefatos gerados pelo Quartus.
+# Padrões sem "/" inicial valem em qualquer profundidade, então cobrem
+# todo projeto do repo (Neander/, LABS/LAB1/LAB1/, LABS/LAB7/, ...).
+
+# Diretórios de compilação e simulação
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+
+# Relatórios e mensagens
+*.rpt
+*.summary
+*.smsg
+*.done
+
+# Estado da IDE e backups
+*.qws
+*.bak
+*.qdf
+
+# Saídas de programação
+*.jdi
+*.pin
+*.sld
+*.sof
+*.pof

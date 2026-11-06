@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY Contador
+set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:13:11  NOVEMBER 04, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -47,12 +47,39 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE divisor_frequencia.v
 set_global_assignment -name VERILOG_FILE conversor_bcd.v
 set_global_assignment -name VERILOG_FILE ff_d.v
 set_global_assignment -name BDF_FILE top.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VERILOG_FILE contador.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_G21 -to clk
+set_location_assignment PIN_H2 -to rst
+set_location_assignment PIN_J6 -to d[0]
+set_location_assignment PIN_H5 -to d[1]
+set_location_assignment PIN_H6 -to d[2]
+set_location_assignment PIN_G4 -to d[3]
+set_location_assignment PIN_G5 -to d[4]
+set_location_assignment PIN_J7 -to d[5]
+set_location_assignment PIN_H7 -to d[6]
+set_location_assignment PIN_E3 -to d[7]
+set_location_assignment PIN_E4 -to sel[0]
+set_location_assignment PIN_D2 -to sel[1]
+set_location_assignment PIN_A13 -to a1
+set_location_assignment PIN_B13 -to b1
+set_location_assignment PIN_C13 -to c1
+set_location_assignment PIN_A14 -to d1_hex
+set_location_assignment PIN_B14 -to e1
+set_location_assignment PIN_E14 -to f1
+set_location_assignment PIN_A15 -to g1
+set_location_assignment PIN_E11 -to a2
+set_location_assignment PIN_F11 -to b2
+set_location_assignment PIN_H12 -to c2
+set_location_assignment PIN_H13 -to d2_hex
+set_location_assignment PIN_G12 -to e2
+set_location_assignment PIN_F12 -to f2
+set_location_assignment PIN_F13 -to g2
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

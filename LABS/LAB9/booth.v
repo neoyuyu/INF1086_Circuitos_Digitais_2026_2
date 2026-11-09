@@ -13,14 +13,14 @@ module booth (
     done
 );
 
-  localparam S_IDLE = 3'b000;
-  localparam S_INIT = 3'b001;
-  localparam S_CHECK = 3'b010;
-  localparam S_ADD = 3'b011;
-  localparam S_SUB = 3'b100;
-  localparam S_SHIFT = 3'b101;
-  localparam S_DEC = 3'b110;
-  localparam S_DONE = 3'b111;
+  localparam reg [2:0] S_IDLE = 3'b000;
+  localparam reg [2:0] S_INIT = 3'b001;
+  localparam reg [2:0] S_CHECK = 3'b010;
+  localparam reg [2:0] S_ADD = 3'b011;
+  localparam reg [2:0] S_SUB = 3'b100;
+  localparam reg [2:0] S_SHIFT = 3'b101;
+  localparam reg [2:0] S_DEC = 3'b110;
+  localparam reg [2:0] S_DONE = 3'b111;
   reg [2:0] next_state;
   reg [2:0] current_state;
 

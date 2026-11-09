@@ -1,16 +1,28 @@
+# Diretórios de compilação Quartus
 db/
 incremental_db/
 output_files/
 simulation/
+greybox_tmp/
+
+# Relatórios e temporários
 *.rpt
 *.summary
 *.smsg
+*.done
 *.qws
 *.bak
-*.done
+
+# Saídas de compilação e programação FPGA
 *.jdi
 *.pin
 *.sld
 *.sof
 *.pof
-*.pdf
+
+# Simulação Icarus Verilog e GTKWave
+*.vcd
+*.vvp
+*.fst
+*.gtkw
+sim_*

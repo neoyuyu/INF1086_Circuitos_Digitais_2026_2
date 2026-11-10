@@ -26,3 +26,11 @@ greybox_tmp/
 *.sld
 *.sof
 *.pof
+
+# Simulações (Icarus Verilog, GTKWave)
+*.vcd
+*.vvp
+*.fst
+*.gtkw
+sim_*
+

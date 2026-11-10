@@ -44,19 +44,20 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:12  OCTOBER 09, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name BDF_FILE neander_top.bdf
-set_global_assignment -name VERILOG_FILE pc_estrutural.v
-set_global_assignment -name VERILOG_FILE divisor_frequencia.v
-set_global_assignment -name VERILOG_FILE decoder_4x11.v
-set_global_assignment -name VERILOG_FILE conversor_bcd.v
-set_global_assignment -name VERILOG_FILE ff_d.v
-set_global_assignment -name VERILOG_FILE ula.v
-set_global_assignment -name BDF_FILE top_neander.bdf
-set_global_assignment -name VERILOG_FILE codificador_neander.v
-set_global_assignment -name VERILOG_FILE temporizador.v
-set_global_assignment -name VERILOG_FILE unidade_controle.v
+set_global_assignment -name SEARCH_PATH schematics/symbols
+set_global_assignment -name SEARCH_PATH rtl
+set_global_assignment -name BDF_FILE schematics/neander_top.bdf
+set_global_assignment -name VERILOG_FILE rtl/pc_estrutural.v
+set_global_assignment -name VERILOG_FILE rtl/divisor_frequencia.v
+set_global_assignment -name VERILOG_FILE rtl/decoder_4x11.v
+set_global_assignment -name VERILOG_FILE rtl/conversor_bcd.v
+set_global_assignment -name VERILOG_FILE rtl/ff_d.v
+set_global_assignment -name VERILOG_FILE rtl/ula.v
+set_global_assignment -name VERILOG_FILE rtl/codificador_neander.v
+set_global_assignment -name VERILOG_FILE rtl/temporizador.v
+set_global_assignment -name VERILOG_FILE rtl/unidade_controle.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE opcode.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/waveforms/opcode.vwf

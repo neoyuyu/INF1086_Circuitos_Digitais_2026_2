@@ -27,7 +27,7 @@ module booth (
 
   // 3 - Registradores de estado
   always @(posedge clk or negedge rst) begin
-    if (rst == 0) current_state <= S_IDLE;
+    if (rst == 0) current_state <= S_IDLE;  //reset assincrono
     else current_state <= next_state;
   end
 

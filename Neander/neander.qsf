@@ -47,6 +47,7 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name SEARCH_PATH schematics/symbols
 set_global_assignment -name SEARCH_PATH rtl
 set_global_assignment -name BDF_FILE schematics/neander_top.bdf
+set_global_assignment -name VERILOG_FILE rtl/pc_bit_slice.v
 set_global_assignment -name VERILOG_FILE rtl/pc_estrutural.v
 set_global_assignment -name VERILOG_FILE rtl/divisor_frequencia.v
 set_global_assignment -name VERILOG_FILE rtl/decoder_4x11.v

@@ -1,7 +1,7 @@
 // Gabriel Tafarel
 // Sayid Safa
 // Módulo Temporizador do Neander (Contador síncrono de 3 bits + Decodificador 3x8)
-// Reutiliza pc_bit_slice (e ff_async) definidos em pc_estrutural.v
+// Reutiliza pc_bit_slice (e ff_d) definidos em pc_bit_slice.v e ff_d.v
 
 module decod_3x8 (
     input  wire [2:0] count,

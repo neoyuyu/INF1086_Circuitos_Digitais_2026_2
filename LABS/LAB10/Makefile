@@ -1,4 +1,4 @@
-TOP ?= top
+TOP ?=
 TB ?=
 BG ?= white
 BUILD_DIR := build
@@ -8,9 +8,14 @@ TB_FILES := $(wildcard *tb*.v *testbench*.v)
 SRCS ?= $(filter-out $(TB_FILES),$(ALL_V))
 SIM_SRCS ?= $(ALL_V)
 
+RTL_NAME := $(if $(TOP),$(TOP),rtl)
+YOSYS_PREP := $(if $(TOP),prep -top $(TOP),prep -auto-top)
+
 VVP_OUT := $(BUILD_DIR)/sim.vvp
-JSON_OUT := $(BUILD_DIR)/$(TOP).json
-SVG_OUT := $(BUILD_DIR)/$(TOP).svg
+JSON_OUT := $(BUILD_DIR)/$(RTL_NAME).json
+SVG_OUT := $(BUILD_DIR)/$(RTL_NAME).svg
+HTML_OUT := $(BUILD_DIR)/digitaljs.html
+DIGITALJS_RENDER := /home/gabriel/.local/share/digitaljs/render.js
 VCD ?=
 
 IVERILOG_FLAGS := -Wall $(if $(TB),-s $(TB),)
@@ -47,14 +52,18 @@ vis: $(SVG_OUT)
 
 $(JSON_OUT): $(SRCS) | $(BUILD_DIR)
 	@test -n "$(SRCS)" || (echo "Erro: nenhum arquivo .v de design encontrado (SRCS vazio)." && exit 1)
-	yosys -q -p "read_verilog $(SRCS); prep -top $(TOP); write_json $@"
+	yosys -q -p "read_verilog $(SRCS); $(YOSYS_PREP); write_json $@"
 
 $(SVG_OUT): $(JSON_OUT)
 	netlistsvg $< -o $@
 	sed -i '0,/<svg[^>]*>/s||&\n  <rect width="100%" height="100%" fill="$(BG)" stroke="none"/>|' $@
 
-rtl: vis
-	xdg-open $(SVG_OUT) >/dev/null 2>&1 &
+$(HTML_OUT): $(SRCS) | $(BUILD_DIR)
+	@test -n "$(SRCS)" || (echo "Erro: nenhum arquivo .v de design encontrado (SRCS vazio)." && exit 1)
+	node $(DIGITALJS_RENDER) $(if $(TOP),--top $(TOP),) -o $@ $(SRCS)
+
+rtl: $(HTML_OUT)
+	xdg-open $(HTML_OUT) >/dev/null 2>&1 &
 
 clean:
 	rm -rf $(BUILD_DIR)
@@ -67,8 +76,8 @@ help:
 	@echo "  compile  - Compila todos os .v com iverilog em $(VVP_OUT)"
 	@echo "  sim      - Compila e executa a simulacao com vvp"
 	@echo "  wave     - Executa a simulacao e abre o .vcd mais recente no gtkwave"
-	@echo "  vis      - Gera o esquematico RTL em $(SVG_OUT) (yosys + netlistsvg)"
-	@echo "  rtl      - Gera o esquematico RTL e abre o SVG"
+	@echo "  rtl      - Gera e abre o esquematico RTL interativo no DigitalJS local"
+	@echo "  vis      - Gera o esquematico RTL estatico em $(SVG_OUT) (yosys + netlistsvg)"
 	@echo "  clean    - Remove o diretorio $(BUILD_DIR)"
 	@echo ""
 	@echo "Variaveis:"

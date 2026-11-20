@@ -1,0 +1,3 @@
+área do circuito = Total combinational functions 4 / 15,408 ( < 1 % )
+
+Atraso crítico = en/FR = 6.931

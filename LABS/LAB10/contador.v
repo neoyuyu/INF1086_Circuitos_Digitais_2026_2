@@ -4,6 +4,48 @@
 //   sel = 01: armazenamento    (Qt <- Qt-1)
 //   sel = 10: incremento       (Qt <- Qt-1 + 1)
 //   sel = 11: decremento       (Qt <- Qt-1 - 1)
+
+module contador_bit (
+    input  d,
+    input  sel_carga,
+    input  sel_mantem,
+    input  sel_inc,
+    input  sel_dec,
+    input  cin_sobe,
+    input  cin_desce,
+    input  clk,
+    input  rstn,
+    output q,
+    output cout_sobe,
+    output cout_desce
+);
+
+  // Propagacao das cadeias de vai-um (sobe) e pede-emprestado (desce)
+  assign cout_sobe  = cin_sobe & q;
+  assign cout_desce = cin_desce & ~q;
+
+  // Quatro opcoes de proximo estado para o bit
+  wire proximo_carga = d;
+  wire proximo_mantem = q;
+  wire proximo_inc = q ^ cin_sobe;
+  wire proximo_dec = q ^ cin_desce;
+
+  // MUX 4:1 em AND-OR: so a opcao escolhida passa
+  wire proximo = (sel_carga  & proximo_carga)
+               | (sel_mantem & proximo_mantem)
+               | (sel_inc    & proximo_inc)
+               | (sel_dec    & proximo_dec);
+
+  ff_d FF (
+      .d(proximo),
+      .clk(clk),
+      .rstn(rstn),
+      .q(q),
+      .qn()
+  );
+
+endmodule
+
 module contador (
     input  [7:0] d,     // dado para carga paralela
     input  [1:0] sel,   // selecao da operacao
@@ -20,50 +62,29 @@ module contador (
   // ---- Cadeias de toggle ----
   // sobe[i]  = 1 quando todos os bits abaixo de i sao 1 (vai-um)
   // desce[i] = 1 quando todos os bits abaixo de i sao 0 (pede emprestado)
-
-  wire [7:0] sobe;
-  wire [7:0] desce;
+  wire [8:0] sobe;
+  wire [8:0] desce;
   assign sobe[0]  = 1'b1;  // o bit 0 sempre inverte
   assign desce[0] = 1'b1;
-
-  // ---- Valor que cada ff_d vai receber ----
-  wire [7:0] proximo_carga;
-  wire [7:0] proximo_mantem;
-  wire [7:0] proximo_inc;
-  wire [7:0] proximo_dec;
-  wire [7:0] proximo;
 
   genvar i;
   generate
     for (i = 0; i < 8; i = i + 1) begin : gen_bit_contador
-
-      // cadeias: cada bit olha o bit anterior e a cadeia anterior
-      if (i > 0) begin : g_cadeia
-        assign sobe[i]  = sobe[i-1] & q[i-1];
-        assign desce[i] = desce[i-1] & ~q[i-1];
-      end
-
-      // as quatro opcoes de valor para o bit i
-      assign proximo_carga[i] = d[i];
-      assign proximo_mantem[i] = q[i];
-      assign proximo_inc[i] = q[i] ^ sobe[i];
-      assign proximo_dec[i] = q[i] ^ desce[i];
-
-      // MUX 4:1 em AND-OR: so a opcao escolhida passa
-      assign proximo[i] = (sel_carga  & proximo_carga[i])
-                              | (sel_mantem & proximo_mantem[i])
-                              | (sel_inc    & proximo_inc[i])
-                              | (sel_dec    & proximo_dec[i]);
-
-      ff_d FF (
-          .d(proximo[i]),
+      contador_bit BIT (
+          .d(d[i]),
+          .sel_carga(sel_carga),
+          .sel_mantem(sel_mantem),
+          .sel_inc(sel_inc),
+          .sel_dec(sel_dec),
+          .cin_sobe(sobe[i]),
+          .cin_desce(desce[i]),
           .clk(clk),
           .rstn(rstn),
           .q(q[i]),
-          .qn()
+          .cout_sobe(sobe[i+1]),
+          .cout_desce(desce[i+1])
       );
     end
   endgenerate
 
 endmodule
-

@@ -1,58 +1,51 @@
-module ff (
-    input wire clk,
-    enb,
-    d,
-    output q
-);
-
-  always @(posedge clk) begin
-    if (rst) begin
-      q <= 1'b0;
-    end else begin
-      q <= d;
-    end
-  end
-endmodule
-
 module bit_slice (
     input  clk,
-    rst,
-    cin,
+    input  enb,
+    input  rst,
+    input  cin,
     output q,
-    cout
+    output cout
 );
 
   wire soma;
   wire in_ff;
+  wire qn;
 
   assign soma  = q ^ cin;
+  assign cout  = q & cin;
 
   assign in_ff = enb ? soma : q;
 
-  ff FLIPSFLOPERS (
+  ff_d FLIPSFLOPERS (
       .clk(clk),
-      .enb(rst),
-      .d  (in_ff),
-      .q  (q)
+      .rstn(rst),
+      .d(in_ff),
+      .q(q),
+      .qn(qn)
   );
 
 endmodule
 
 module sync_count (
     input wire clk,
-    enb,
+    input enb,
+    input rst,
     output wire [3:0] out_4
 );
 
+  wire [4:0] c;  // declara com 5 bits pra não acessar indice invalido no loop
+  assign c[0] = 1'b1;
+
   genvar i;
   generate
-    for (i = 0; i < 4; i++) begin : gen_count_bit
+    for (i = 0; i < 4; i = i + 1) begin : gen_count_bit
       bit_slice BITERS (
           .clk(clk),
-          .rst(enb),
-          .cin((i == 0) ? 1'b1 : c[i-1]),
+          .enb(enb),
+          .rst(rst),
+          .cin(c[i]),
           .q(out_4[i]),
-          .cout(c[i])
+          .cout(c[i+1])
       );
     end
   endgenerate

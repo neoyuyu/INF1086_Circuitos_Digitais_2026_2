@@ -1,16 +1,16 @@
 module booth_control (
     input clk,
-    rst,
-    start,
-    q_0,
-    q_minus,
-    count_zero,
+    input rst,
+    input start,
+    input q_0,
+    input q_minus,
+    input count_zero,
     output reg load,
-    op_add,
-    op_sub,
-    op_shift,
-    op_dec,
-    done
+    output op_add,
+    output op_sub,
+    output op_shift,
+    output op_dec,
+    output done
 );
 
   localparam reg [2:0] S_IDLE = 3'b000;

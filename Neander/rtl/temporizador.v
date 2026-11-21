@@ -21,7 +21,7 @@ endmodule
 
 module temporizador (
     input  wire       clk,
-    input  wire       rst,
+    input  wire       rstn,
     input  wire       goto_t0,
     input  wire       hlt,
     output wire [7:0] t
@@ -43,7 +43,7 @@ module temporizador (
       // - quando halt_t3 = 1                           -> mantém q (congela)
       pc_bit_slice bit_inst (
           .clk         (clk),
-          .rst         (rst),
+          .rstn         (rstn),
           .cargaPC     (goto_t0 & ~halt_t3),
           .incrementaPC(~halt_t3),
           .data_in     (1'b0),

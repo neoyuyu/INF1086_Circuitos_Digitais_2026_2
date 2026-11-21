@@ -1,6 +1,6 @@
 module pc_bit_slice (  // Menor unidade que resolve o problema
     input  wire clk,
-    input  wire rst,
+    input  wire rstn,
     input  wire cargaPC,
     input  wire incrementaPC,
     input  wire data_in,
@@ -22,7 +22,7 @@ module pc_bit_slice (  // Menor unidade que resolve o problema
   ff_d ff_inst (
       .d   (d_in_ff),
       .clk (clk),
-      .rstn(~rst),
+      .rstn(rstn),
       .q   (q),
       .qn  ()
   );

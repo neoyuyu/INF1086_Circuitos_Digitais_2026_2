@@ -37,20 +37,17 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Arria II GX"
-set_global_assignment -name DEVICE auto
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
 set_global_assignment -name TOP_LEVEL_ENTITY neander_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:12  OCTOBER 09, 2026"
-set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name SEARCH_PATH schematics/symbols
 set_global_assignment -name SEARCH_PATH rtl
 
 
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 
 set_global_assignment -name VHDL_FILE rtl/ROM_teste.vhd
 set_global_assignment -name VERILOG_FILE rtl/mux8bit.v
@@ -72,4 +69,66 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE sim/waveforms/opcode.vwf
 set_global_assignment -name VERILOG_FILE rtl/reg_n_z.v
 set_global_assignment -name VERILOG_FILE rtl/run_step_mode.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE sim/waveforms/top_neander.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/hermione/Desktop/CD/cd_projetos/Neander/sim/waveforms/top_neander.vwf"
+set_location_assignment PIN_G21 -to clk_global
+set_location_assignment PIN_H2 -to rstn
+set_location_assignment PIN_G3 -to btn_step
+set_location_assignment PIN_J6 -to sw_run_debug
+set_location_assignment PIN_J1 -to led_n
+set_location_assignment PIN_J2 -to led_z
+set_location_assignment PIN_E1 -to led_hlt
+set_location_assignment PIN_J3 -to led_illegal
+set_location_assignment PIN_D15 -to a_1
+set_location_assignment PIN_A16 -to b_1
+set_location_assignment PIN_B16 -to c_1
+set_location_assignment PIN_E15 -to d_1
+set_location_assignment PIN_A17 -to e_1
+set_location_assignment PIN_B17 -to f_1
+set_location_assignment PIN_F14 -to g_1
+set_location_assignment PIN_B18 -to a_2
+set_location_assignment PIN_F15 -to b_2
+set_location_assignment PIN_A19 -to c_2
+set_location_assignment PIN_B19 -to d_2
+set_location_assignment PIN_C19 -to e_2
+set_location_assignment PIN_D19 -to f_2
+set_location_assignment PIN_G15 -to g_2
+set_location_assignment PIN_E11 -to a_3
+set_location_assignment PIN_F11 -to b_3
+set_location_assignment PIN_H12 -to c_3
+set_location_assignment PIN_H13 -to d_3
+set_location_assignment PIN_G12 -to e_3
+set_location_assignment PIN_F12 -to f_3
+set_location_assignment PIN_F13 -to g_3
+set_location_assignment PIN_A13 -to a_4
+set_location_assignment PIN_B13 -to b_4
+set_location_assignment PIN_C13 -to c_4
+set_location_assignment PIN_A14 -to d_4
+set_location_assignment PIN_B14 -to e_4
+set_location_assignment PIN_E14 -to f_4
+set_location_assignment PIN_A15 -to g_4
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[0]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[1]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[2]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[3]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[4]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[5]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[6]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_pc[7]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[0]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[1]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[2]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[3]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[4]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[5]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[6]
+set_instance_assignment -name VIRTUAL_PIN ON -to out_acm[7]
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED WITH WEAK PULL-UP"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

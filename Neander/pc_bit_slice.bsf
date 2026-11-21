@@ -34,8 +34,8 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 48)
 		(input)
-		(text "rst" (rect 0 0 10 12)(font "Arial" ))
-		(text "rst" (rect 21 43 31 55)(font "Arial" ))
+		(text "rstn" (rect 0 0 15 12)(font "Arial" ))
+		(text "rstn" (rect 21 43 36 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port

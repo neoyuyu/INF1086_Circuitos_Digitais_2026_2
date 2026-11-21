@@ -4,7 +4,7 @@
 
 module unidade_controle (
     input  wire       clk,
-    input  wire       rst,
+    input  wire       rstn,
     input  wire [3:0] opcode,        // Opcode vindo do RI (4 bits mais significativos)
     input  wire       n,             // Flag N (negativo) vindo da ULA / reg NZ
     input  wire       z,             // Flag Z (zero) vindo da ULA / reg NZ
@@ -54,7 +54,7 @@ module unidade_controle (
   // Instanciação do Temporizador (gera t0..t7)
   temporizador temp_inst (
       .clk    (clk),
-      .rst    (rst),
+      .rstn    (rstn),
       .goto_t0(goto_t0),
       .hlt    (hlt),
       .t      (t)
@@ -88,11 +88,12 @@ module unidade_controle (
   // sel = t5.(STA+LDA+ADD+OR+AND)
   assign sel          = t5 & op_mem_all;
 
-  // carga RDM = t6.STA
-  assign cargaRDM     = t6 & sta;
-
   // Read = t1 + t4.(STA+LDA+ADD+OR+AND+JMP+JN.N+JZ.Z) + t6.(LDA+ADD+OR+AND)
   assign read         = t1 | (t4 & (op_mem_all | op_desvio)) | (t6 & op_mem_ac);
+  
+  // carga RDM = t6.STA
+  //assign cargaRDM     = t6 & sta; usar quando tiver ram !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  assign cargaRDM = (t6 & sta) | read; // 
 
   // Write = t7.STA
   assign write        = t7 & sta;

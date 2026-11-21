@@ -1,6 +1,6 @@
 module pc_estrutural (
     input  wire       clk,
-    input  wire       rst,
+    input  wire       rstn,
     input  wire       cargaPC,       // Habilita carga paralela (JMP)
     input  wire       incrementaPC,  // Habilita incremento (+1)
     input  wire [7:0] data_in,       // Barramento de entrada
@@ -14,7 +14,7 @@ module pc_estrutural (
     for (i = 0; i < 8; i = i + 1) begin : gen_pc_bits
       pc_bit_slice bit_inst (
           .clk(clk),
-          .rst(rst),
+          .rstn(rstn),
           .cargaPC(cargaPC),
           .incrementaPC(incrementaPC),
           .data_in(data_in[i]),

@@ -1,14 +1,15 @@
 module reg_n_z (
     input  clk,
+    input  rstn,   // reset assincrono, ativo em 0
     input  cargaNZ,
     input  n,
     input  z,
     output n_out,
     output z_out
 );
-	
-	ff_d_carga ff_n (.d(n), .clk(clk), .rstn(1'b1), .carga(cargaNZ), .q(n_out));
-	ff_d_carga ff_z (.d(z), .clk(clk), .rstn(1'b1), .carga(cargaNZ), .q(z_out));
+
+	ff_d_carga ff_n (.d(n), .clk(clk), .rstn(rstn), .carga(cargaNZ), .q(n_out));
+	ff_d_carga ff_z (.d(z), .clk(clk), .rstn(rstn), .carga(cargaNZ), .q(z_out));
 	
 endmodule
 

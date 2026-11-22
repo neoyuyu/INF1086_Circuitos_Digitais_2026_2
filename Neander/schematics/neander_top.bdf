@@ -374,7 +374,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 352 864 408 880))
+	(annotation_block (location)(rect 328 896 384 912))
 )
 (pin
 	(output)
@@ -391,7 +391,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 352 880 408 896))
+	(annotation_block (location)(rect 328 912 384 928))
 )
 (pin
 	(output)
@@ -408,7 +408,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 360 784 416 800))
+	(annotation_block (location)(rect 352 784 408 800))
 )
 (pin
 	(output)
@@ -476,7 +476,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 352 848 408 864))
+	(annotation_block (location)(rect 328 880 384 896))
 )
 (pin
 	(output)
@@ -648,13 +648,13 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1864 896 1912 912))
+	(annotation_block (location)(rect 1888 944 1936 960))
 )
 (pin
 	(output)
 	(rect 1688 896 1864 912)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "illegal_op" (rect 90 0 134 12)(font "Arial" ))
+	(text "led_illegal" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -665,6 +665,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1904 840 1952 856))
 )
 (symbol
 	(rect 496 832 656 976)

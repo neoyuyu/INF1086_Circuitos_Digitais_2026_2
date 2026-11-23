@@ -34,3 +34,4 @@ greybox_tmp/
 *.gtkw
 sim_*
 
+.pdf

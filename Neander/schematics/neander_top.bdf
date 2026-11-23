@@ -374,7 +374,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 352 864 408 880))
+	(annotation_block (location)(rect 328 896 384 912))
 )
 (pin
 	(output)
@@ -391,7 +391,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 352 880 408 896))
+	(annotation_block (location)(rect 328 912 384 928))
 )
 (pin
 	(output)
@@ -408,7 +408,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 360 784 416 800))
+	(annotation_block (location)(rect 352 784 408 800))
 )
 (pin
 	(output)
@@ -476,7 +476,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 352 848 408 864))
+	(annotation_block (location)(rect 328 880 384 896))
 )
 (pin
 	(output)
@@ -648,13 +648,13 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1864 896 1912 912))
+	(annotation_block (location)(rect 1888 944 1936 960))
 )
 (pin
 	(output)
 	(rect 1688 896 1864 912)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "illegal_op" (rect 90 0 134 12)(font "Arial" ))
+	(text "led_illegal" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -665,6 +665,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1904 840 1952 856))
 )
 (symbol
 	(rect 496 832 656 976)
@@ -801,72 +802,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 176 96))
 	)
-)
-(symbol
-	(rect 1216 224 1408 304)
-	(text "ROM_teste" (rect 5 0 60 12)(font "Arial" ))
-	(text "inst4" (rect 8 64 31 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "entrada[7..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "entrada[7..0]" (rect 21 27 83 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "saida[7..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "saida[7..0]" (rect 128 27 179 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 64))
-	)
-)
-(symbol
-	(rect 1240 416 1432 528)
-	(text "reg8bit" (rect 154 0 187 12)(font "Arial" ))
-	(text "RDM" (rect 160 96 184 108)(font "Arial" ))
-	(port
-		(pt 192 32)
-		(input)
-		(text "sinal_carga" (rect 0 0 55 12)(font "Arial" ))
-		(text "sinal_carga" (rect 116 27 171 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
-	)
-	(port
-		(pt 192 48)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 157 43 171 55)(font "Arial" ))
-		(line (pt 192 48)(pt 176 48))
-	)
-	(port
-		(pt 192 64)
-		(input)
-		(text "rstn" (rect 0 0 18 12)(font "Arial" ))
-		(text "rstn" (rect 153 59 171 71)(font "Arial" ))
-		(line (pt 192 64)(pt 176 64))
-	)
-	(port
-		(pt 192 80)
-		(input)
-		(text "entrada[7..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "entrada[7..0]" (rect 109 75 171 87)(font "Arial" ))
-		(line (pt 192 80)(pt 176 80)(line_width 3))
-	)
-	(port
-		(pt 0 32)
-		(output)
-		(text "saida[7..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "saida[7..0]" (rect 21 27 72 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 96))
-	)
-	(flipy)
 )
 (symbol
 	(rect 512 80 640 160)
@@ -1601,6 +1536,295 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 136 96))
 	)
 )
+(symbol
+	(rect 1648 232 1808 432)
+	(text "ALTDPRAM" (rect 49 0 131 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 3 189 23 203)(font "Arial" (font_size 8)))
+	(port
+		(pt 0 176)
+		(input)
+		(text "inclocken" (rect 20 169 73 183)(font "Arial" (font_size 8)))
+		(text "inclocken" (rect 20 169 73 183)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "inclock" (rect 20 153 58 167)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 20 153 58 167)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "rdaddress[WIDTHAD-1..0]" (rect 20 17 167 31)(font "Arial" (font_size 8)))
+		(text "rdaddress[]" (rect 20 17 86 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "rden" (rect 20 33 45 47)(font "Arial" (font_size 8)))
+		(text "rden" (rect 20 33 45 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "wraddress[WIDTHAD-1..0]" (rect 20 113 172 127)(font "Arial" (font_size 8)))
+		(text "wraddress[]" (rect 20 113 90 127)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 16 120)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "data[WIDTH-1..0]" (rect 20 97 115 111)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 97 51 111)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "outclock" (rect 20 57 67 71)(font "Arial" (font_size 8)))
+		(text "outclock" (rect 20 57 67 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "outclocken" (rect 20 73 81 87)(font "Arial" (font_size 8)))
+		(text "outclocken" (rect 20 73 81 87)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "wren" (rect 20 129 50 143)(font "Arial" (font_size 8)))
+		(text "wren" (rect 20 129 50 143)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 16 136))
+	)
+	(port
+		(pt 120 200)
+		(input)
+		(text "aclr" (rect 112 166 126 187)(font "Arial" (font_size 8))(vertical))
+		(text "aclr" (rect 112 166 126 187)(font "Arial" (font_size 8))(vertical))
+		(line (pt 120 200)(pt 120 184))
+	)
+	(port
+		(pt 160 40)
+		(output)
+		(text "q[WIDTH-1..0]" (rect 128 33 205 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 128 33 142 47)(font "Arial" (font_size 8)))
+		(line (pt 144 40)(pt 160 40)(line_width 3))
+	)
+	(parameter
+		"FILE"
+		"prog.mif"
+		"File containing initial contents of memory array"
+	)
+	(parameter
+		"INDATA_ACLR"
+		"\"ON\""
+		"Should aclr affect the write data register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"INDATA_REG"
+		"\"INCLOCK\""
+		"Should the write data be registered?"
+		"\"INCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"NUMWORDS"
+		"2^WIDTHAD"
+		"Number of memory words, default is 2^WIDTHAD"
+	)
+	(parameter
+		"OUTDATA_ACLR"
+		"\"ON\""
+		"Should aclr affect the output data register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"OUTDATA_REG"
+		"\"UNREGISTERED\""
+		"Should the output data be registered?"
+		"\"OUTCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"RDADDRESS_ACLR"
+		"\"ON\""
+		"Should aclr affect the read address register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"RDADDRESS_REG"
+		"\"OUTCLOCK\""
+		"Should the read address port be registered?"
+		"\"INCLOCK\"" "\"OUTCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"RDCONTROL_ACLR"
+		"\"ON\""
+		"Should aclr affect the read enable register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"RDCONTROL_REG"
+		"\"OUTCLOCK\""
+		"Should the read enable port be registered?"
+		"\"INCLOCK\"" "\"OUTCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"USE_EAB"
+		"\"ON\""
+		"Specifies EAB use"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"WIDTH"
+		"8"
+		"Data width in bits, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"WIDTHAD"
+		"8"
+		"Number of address lines, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
+	)
+	(parameter
+		"WRADDRESS_ACLR"
+		"\"ON\""
+		"Should aclr affect the write address register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"WRADDRESS_REG"
+		"\"INCLOCK\""
+		"Should the write address port be registered?"
+		"\"INCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"WRCONTROL_ACLR"
+		"\"ON\""
+		"Should aclr affect the write enable register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"WRCONTROL_REG"
+		"\"INCLOCK\""
+		"Should the write enable port be registered?"
+		"\"INCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(drawing
+		(line (pt 16 184)(pt 144 184))
+		(line (pt 16 16)(pt 144 16))
+		(line (pt 16 184)(pt 16 16))
+		(line (pt 144 184)(pt 144 16))
+	)
+	(annotation_block (parameter)(rect 1808 -24 2040 228))
+)
+(symbol
+	(rect 976 80 1024 112)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1752 432 1784 464)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1488 464 1696 608)
+	(text "rdm" (rect 185 0 203 12)(font "Arial" ))
+	(text "inst7" (rect 177 128 200 140)(font "Arial" ))
+	(port
+		(pt 208 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 173 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32))
+	)
+	(port
+		(pt 208 48)
+		(input)
+		(text "rstn" (rect 0 0 18 12)(font "Arial" ))
+		(text "rstn" (rect 169 43 187 55)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48))
+	)
+	(port
+		(pt 208 64)
+		(input)
+		(text "cargaRDM" (rect 0 0 51 12)(font "Arial" ))
+		(text "cargaRDM" (rect 136 59 187 71)(font "Arial" ))
+		(line (pt 208 64)(pt 192 64))
+	)
+	(port
+		(pt 208 80)
+		(input)
+		(text "read" (rect 0 0 21 12)(font "Arial" ))
+		(text "read" (rect 166 75 187 87)(font "Arial" ))
+		(line (pt 208 80)(pt 192 80))
+	)
+	(port
+		(pt 208 96)
+		(input)
+		(text "dado_mem[7..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "dado_mem[7..0]" (rect 107 91 187 103)(font "Arial" ))
+		(line (pt 208 96)(pt 192 96)(line_width 3))
+	)
+	(port
+		(pt 208 112)
+		(input)
+		(text "dado_ac[7..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "dado_ac[7..0]" (rect 120 107 187 119)(font "Arial" ))
+		(line (pt 208 112)(pt 192 112)(line_width 3))
+	)
+	(port
+		(pt 0 32)
+		(output)
+		(text "saida[7..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "saida[7..0]" (rect 13 27 64 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 128))
+	)
+	(flipy)
+)
 (connector
 	(pt 480 744)
 	(pt 456 744)
@@ -1627,7 +1851,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "cargaAC" (rect 432 688 474 699)(font "DejaVu Sans Condensed" ))
+	(text "cargaAC" (rect 440 688 482 699)(font "DejaVu Sans Condensed" ))
 	(pt 480 696)
 	(pt 432 696)
 )
@@ -1781,12 +2005,6 @@ applicable agreement for further details.
 	(pt 1104 696)
 )
 (connector
-	(text "<<__$DEF_ALIAS3738>>" (rect 1416 240 1552 251)(font "DejaVu Sans Condensed" )(invisible))
-	(pt 1568 256)
-	(pt 1408 256)
-	(bus)
-)
-(connector
 	(pt 736 712)
 	(pt 736 848)
 	(bus)
@@ -1812,29 +2030,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "selMUX" (rect 768 352 804 363)(font "DejaVu Sans Condensed" ))
+	(text "selMUX" (rect 760 344 796 355)(font "DejaVu Sans Condensed" ))
 	(pt 760 336)
 	(pt 808 336)
 )
 (connector
 	(pt 440 448)
 	(pt 736 448)
-	(bus)
-)
-(connector
-	(pt 736 448)
-	(pt 1240 448)
-	(bus)
-)
-(connector
-	(pt 1568 256)
-	(pt 1568 496)
-	(bus)
-)
-(connector
-	(text "rom_rdm[7..0]" (rect 1359 488 1428 499)(font "DejaVu Sans Condensed" ))
-	(pt 1432 496)
-	(pt 1568 496)
 	(bus)
 )
 (connector
@@ -1958,17 +2160,6 @@ applicable agreement for further details.
 	(pt 720 208)
 )
 (connector
-	(text "out_pc[7..0]" (rect 674 288 731 299)(font "DejaVu Sans Condensed" ))
-	(pt 664 304)
-	(pt 736 304)
-	(bus)
-)
-(connector
-	(pt 736 304)
-	(pt 808 304)
-	(bus)
-)
-(connector
 	(pt 376 144)
 	(pt 392 144)
 )
@@ -2013,11 +2204,6 @@ applicable agreement for further details.
 	(pt 1000 816)
 )
 (connector
-	(text "rstn" (rect 1456 474 1473 485)(font "DejaVu Sans Condensed" ))
-	(pt 1432 480)
-	(pt 1528 480)
-)
-(connector
 	(text "out_pc[3..0]" (rect -35 376 24 388)(font "Arial" ))
 	(pt 24 392)
 	(pt -88 392)
@@ -2046,16 +2232,6 @@ applicable agreement for further details.
 	(pt 184 776)
 )
 (connector
-	(text "cargaRDM" (rect 1464 432 1514 443)(font "DejaVu Sans Condensed" ))
-	(pt 1528 448)
-	(pt 1432 448)
-)
-(connector
-	(text "clk" (rect 1464 458 1476 469)(font "DejaVu Sans Condensed" ))
-	(pt 1432 464)
-	(pt 1528 464)
-)
-(connector
 	(pt 1240 800)
 	(pt 1240 840)
 )
@@ -2079,11 +2255,148 @@ applicable agreement for further details.
 	(pt 1256 816)
 	(pt 1216 816)
 )
+(connector
+	(text "write" (rect 1756 720 1778 732)(font "Arial" ))
+	(pt 1744 728)
+	(pt 1688 728)
+)
+(connector
+	(text "read" (rect 1754 704 1775 716)(font "Arial" ))
+	(pt 1688 712)
+	(pt 1744 712)
+)
+(connector
+	(pt 736 448)
+	(pt 1192 448)
+	(bus)
+)
+(connector
+	(pt 1648 352)
+	(pt 1552 352)
+	(bus)
+)
+(connector
+	(pt 1552 352)
+	(pt 1552 256)
+	(bus)
+)
+(connector
+	(text "out_rem[7..0]" (rect 1335 240 1401 252)(font "Arial" ))
+	(pt 1216 256)
+	(pt 1552 256)
+	(bus)
+)
+(connector
+	(pt 1552 256)
+	(pt 1648 256)
+	(bus)
+)
+(connector
+	(text "read" (rect 1602 264 1623 276)(font "Arial" ))
+	(pt 1648 272)
+	(pt 1568 272)
+)
+(connector
+	(text "write" (rect 1610 360 1632 372)(font "Arial" ))
+	(pt 1648 368)
+	(pt 1568 368)
+)
+(connector
+	(text "clk_n" (rect 1055 80 1080 92)(font "Arial" ))
+	(pt 1024 96)
+	(pt 1080 96)
+)
+(connector
+	(text "clk_n" (rect 1604 288 1629 300)(font "Arial" ))
+	(pt 1648 296)
+	(pt 1568 296)
+)
+(connector
+	(text "clk_n" (rect 1617 376 1642 388)(font "Arial" ))
+	(pt 1568 392)
+	(pt 1648 392)
+)
+(connector
+	(pt 1192 448)
+	(pt 1192 496)
+	(bus)
+)
+(connector
+	(pt 1480 336)
+	(pt 1648 336)
+	(bus)
+)
+(connector
+	(pt 1480 336)
+	(pt 1480 496)
+	(bus)
+)
+(connector
+	(pt 1192 496)
+	(pt 1480 496)
+	(bus)
+)
+(connector
+	(pt 1480 496)
+	(pt 1488 496)
+	(bus)
+)
+(connector
+	(text "clk" (rect 1764 488 1778 500)(font "Arial" ))
+	(pt 1696 496)
+	(pt 1752 496)
+)
+(connector
+	(text "rstn" (rect 1766 504 1784 516)(font "Arial" ))
+	(pt 1696 512)
+	(pt 1752 512)
+)
+(connector
+	(text "cargaRDM" (rect 1759 520 1810 532)(font "Arial" ))
+	(pt 1696 528)
+	(pt 1752 528)
+)
+(connector
+	(text "read" (rect 1760 536 1781 548)(font "Arial" ))
+	(pt 1696 544)
+	(pt 1752 544)
+)
+(connector
+	(text "out_ram[7..0]" (rect 1835 256 1901 268)(font "Arial" ))
+	(pt 1808 272)
+	(pt 1864 272)
+	(bus)
+)
+(connector
+	(text "out_ram[7..0]" (rect 1766 552 1832 564)(font "Arial" ))
+	(pt 1696 560)
+	(pt 1752 560)
+	(bus)
+)
+(connector
+	(text "out_acm[7..0]" (rect 1768 568 1836 580)(font "Arial" ))
+	(pt 1696 576)
+	(pt 1752 576)
+	(bus)
+)
+(connector
+	(text "out_pc[7..0]" (rect 674 288 731 299)(font "DejaVu Sans Condensed" ))
+	(pt 664 304)
+	(pt 736 304)
+	(bus)
+)
+(connector
+	(pt 736 304)
+	(pt 808 304)
+	(bus)
+)
 (junction (pt 736 712))
 (junction (pt 736 448))
-(junction (pt 736 304))
 (junction (pt 384 112))
 (junction (pt 384 208))
 (junction (pt 392 144))
 (junction (pt 1240 800))
 (junction (pt 1256 816))
+(junction (pt 1552 256))
+(junction (pt 1480 496))
+(junction (pt 736 304))

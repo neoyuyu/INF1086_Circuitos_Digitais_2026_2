@@ -1,0 +1,40 @@
+-- Gabriel
+-- Sayid
+-- compara as posições 0x80 e 0x82. Carrega 1 no AC se forem iguais e 0 caso contrário.
+
+WIDTH=8;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    -- PROGRAMA
+    00 : 20;   -- LDA
+    01 : 80;   --   endereço 0x80
+    02 : 60;   -- NOT
+    03 : 30;   -- ADD
+    04 : 81;   --   endereço 0x81
+    05 : 30;   -- ADD
+    06 : 82;   --   endereço 0x82
+    07 : A0;   -- JZ
+    08 : 0D;   --   endereço 0x0D
+    09 : 20;   -- LDA
+    0A : 83;   --   endereço 0x83
+    0B : 80;   -- JMP
+    0C : 0F;   --   endereço 0x0F
+    0D : 20;   -- LDA
+    0E : 84;   --   endereço 0x84
+    0F : F0;   -- HLT
+
+    [10..7F] : 00;
+
+    -- DADOS
+    80 : 0A;   -- 10
+    81 : 01;   -- 1
+    82 : 0B;   -- 11  (diferente de 0x80)
+    83 : 00;   -- 0  (resultado: diferentes)
+    84 : 01;   -- 1  (resultado: iguais)
+
+    [85..FF] : 00;
+END;

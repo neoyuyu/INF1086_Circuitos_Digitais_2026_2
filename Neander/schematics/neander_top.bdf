@@ -1628,7 +1628,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "cargaAC" (rect 432 688 474 699)(font "DejaVu Sans Condensed" ))
+	(text "cargaAC" (rect 440 688 482 699)(font "DejaVu Sans Condensed" ))
 	(pt 480 696)
 	(pt 432 696)
 )

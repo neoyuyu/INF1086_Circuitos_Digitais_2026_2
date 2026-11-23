@@ -92,8 +92,8 @@ module unidade_controle (
   assign read         = t1 | (t4 & (op_mem_all | op_desvio)) | (t6 & op_mem_ac);
   
   // carga RDM = t6.STA
-  //assign cargaRDM     = t6 & sta; usar quando tiver ram !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  assign cargaRDM = (t6 & sta) | read; // 
+  assign cargaRDM     = t6 & sta;
+  //assign cargaRDM = (t6 & sta) | read; //nao mais usado
 
   // Write = t7.STA
   assign write        = t7 & sta;

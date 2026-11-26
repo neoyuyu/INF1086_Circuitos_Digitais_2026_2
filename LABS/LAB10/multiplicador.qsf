@@ -68,7 +68,7 @@ set_location_assignment PIN_G5 -to multiplier[0]
 set_location_assignment PIN_J7 -to multiplier[1]
 set_location_assignment PIN_H7 -to multiplier[2]
 set_location_assignment PIN_E3 -to multiplier[3]
-set_location_assignment PIN_E4 -to start
+set_location_assignment PIN_D2 -to start
 set_location_assignment PIN_J1 -to product[0]
 set_location_assignment PIN_J2 -to product[1]
 set_location_assignment PIN_J3 -to product[2]

@@ -14,20 +14,18 @@ module reg_n_z (
 endmodule
 
 module ff_d_carga(
-    input  d,
-    input  clk,
-    input  rstn,   //reset para dar valor inicial correto
-    input  carga,
-    output q
-
+    input      d,
+    input      clk,
+    input      rstn,   // reset assincrono, ativo em 0
+    input      carga,
+    output reg q
 );
-    wire d_in = carga ? d : q;      
 
-    wire qm;                         // saida do latch mestre
+  always @(posedge clk or negedge rstn) begin
+    if (!rstn)
+      q <= 1'b0;
+    else if (carga)
+      q <= d;
+  end
 
-    // latch mestre: transparente com clk=0, segura com clk=1
-    assign qm = ~rstn ? 1'b0 : (~clk ? d_in : qm);
-
-    // latch escravo: transparente com clk=1, segura com clk=0
-    assign q  = ~rstn ? 1'b0 : (clk ? qm : q);
 endmodule
